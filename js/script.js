@@ -53,7 +53,7 @@ searchRecipe.addEventListener("keydown", (e) => {
         let query = searchRecipe.value
         if (!location.href.includes("index.html")) {
             // Redirect to the index page with a query parameter
-            location.href = `index.html?query=${query}`;
+            location.href = `/index.html?query=${query}`;
         }
         fetchData(query)
     }
