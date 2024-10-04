@@ -51,7 +51,10 @@ searchRecipe.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
         e.preventDefault()
         let query = searchRecipe.value
-        if (location.href != "Recipe_Browser/index.html") location.href = `../Recipe_Browser/index.html?query=${query}`
+        if (!location.href.includes("index.html")) {
+            // Redirect to the index page with a query parameter
+            location.href = `index.html?query=${query}`;
+        }
         fetchData(query)
     }
 })
@@ -59,3 +62,4 @@ searchRecipe.addEventListener("keydown", (e) => {
 if (Query != null) {
     fetchData(Query)
 }
+
