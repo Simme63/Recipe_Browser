@@ -1,0 +1,95 @@
+:root{
+    --primary-color: rgb(199, 161, 90);
+    --secondary-color: wheat;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+}
+h2{
+    text-align: center;
+}
+button{
+    text-align: center;
+    align-self: center;
+}
+#headline{
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+}
+#headline>*{
+    margin: 0.5rem;
+    margin-left: 0rem;
+}
+#websiteName{
+    font-size: 1.5rem;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+div{
+    display: flex;
+    align-items: center;
+}
+div>*{
+    text-decoration: none;
+    color: black;
+    padding: 0.4rem;
+    margin-left: 1rem;
+}
+#searchRecipe{
+    margin-left: 2rem;
+}
+main{
+    display: flex;
+
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+a:hover{
+    color: var(--secondary-color);
+}
+.instructions{
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    border-radius: 10px;
+    filter: drop-shadow(1px 1px 1px #4c4c70);
+    width: 40%;
+    margin: auto;
+    padding: 1rem;
+}
+.image{
+    margin: auto;
+    margin-top: 2rem;
+}
+.foodimage{
+    width: 35rem;
+}
+
+.ingredients {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+.ingredients>ul
+{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+}
+.ingredients>ul>li
+{
+    display: flex;
+    margin: 1rem;
+    overflow: auto;
+    text-decoration: dotted;
+}
+

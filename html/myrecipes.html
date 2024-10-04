@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/myrecipes.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe browser</title>
+</head>
+<body>
+    <header id="headline">
+        <nav>
+            <div>
+                <a href="../index.html" id="websiteName">Recipe browser</a>
+            </div>
+            <div>
+                <a href="random.html">Random</a>
+                <a href="myrecipes.html">My recipes</a>
+                <input type="text" name="" id="searchRecipe" placeholder="Search...">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <form action="" id="recipe_form" class="myrecipeinfo">
+            <div class="dishname dishinfo">
+                <label for="dishname">Dish name</label>
+                <input type="text" name="dishname" id="dishname">
+            </div>
+            <div class="dishingredients dishinfo" >
+                <label for="dishingredients">Dish ingredients</label>
+                <textarea name="dishingredients" cols="40" rows="5" id="dishingredients"></textarea>
+            </div>
+            <div class="dishsteps dishinfo">
+                <label for="dishsteps">Dish steps</label>
+                <textarea name="dishsteps" cols="40" rows="5" id="dishsteps"></textarea>
+            </div>
+            <div class="dishimage dishinfo">
+                <label for="dishimage">Food image (optional)</label>
+                <input type="text" name="dishimage" id="dishimage">
+            </div>
+            <button type="submit" id="owndishbutton">Submit</button>
+        </form>
+        <div id="personalrecipe">
+        </div>
+    </main>
+    <script src="../js/myrecipes.js"></script>
+    <script type="module" src="../js/script.js"></script>
+</body>
+</html>

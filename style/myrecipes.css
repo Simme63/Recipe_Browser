@@ -1,0 +1,33 @@
+.myrecipeinfo{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin: 5rem;
+}
+.dishinfo{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(218, 220, 219);
+    padding: 1rem;
+    
+}
+
+#personalrecipe{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: center;
+    margin: auto;
+}
+
+#personalrecipeimage{
+    width: 20rem;
+    height: auto;
+}
+.personaldishdiv{
+    background-color: aliceblue;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
